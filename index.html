@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML, um breve resumo</title>
+</head>
+<body>
+    <h1 id="inicio">Tags HTML, um breve resumo</h1>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#tags-html">O que são Tags HTML?</a></li>
+        <li><a href="#estrutura-html">Estrutura básica de um documento HTML</a></li>
+        <li><a href="#atributos-html">O que são atributos HTML?</a></li>
+    </ul>
+
+    <p><strong>*Observação:</strong> todas as tags foram escritas na estrutura <strong>(<.tag>)</strong> para evitar falhas no código. Ao replicar as tags na sua página em HTML, exclua o ponto <strong>(< . >)</strong> entre os colchetes.</p>
+
+    <h2 id="tags-html">O que são Tags HTML?</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>As tags HTML são elementos fundamentais na construção de páginas da web. Elas são usadas para marcar e estruturar o conteúdo, permitindo que os navegadores interpretem e exibam informações de maneira adequada. Elas são como etiquetas ou rótulos que envolvem o conteúdo em um documento HTML.</p>
+    <p>As tags delimitam diferentes partes do conteúdo, como títulos, parágrafos, links, imagens e listas. Os navegadores interpretam essas tags para renderizar a página corretamente.</p>
+    <p>Elas são escritas entre os sinais < e >. Existem tags que precisam de fechamento (como <.tag>...</.tag>) e tags que não precisam (como <.tag />).</p>
+   
+    <p> <strong>Exemplos de Tags:</strong></p>
+    <ul>
+        <li><strong><.h1><./h1>, <.h2><./h2>, <.h3><./h3>, <.h4><./h4>, <.h5><./h5>, <.h6><./h6></strong>: Definem o tamanho do título do documento com diferentes níveis de importância.</li>
+        <li><strong><.p><./p></strong>: Define o começo e o fim de um parágrafo. Pode ser utilizado ao lado de align para indicar o alinhamento do trecho.</li>
+        <li><strong><.a><./a></strong>: Cria um link e atribui elementos a ele.</li>
+        <li><strong><.img/></strong>: Permite inserir imagens na página web e não possui fechamento, contendo apenas atributos nela.</li>
+        <li><strong><.i><./i>, <.u><./u></strong>: Formatam textos em itálico, e sublinhados, respectivamente. Ambas requerem abertura e fechamento com o conteúdo entre elas.</li>
+        <li><strong><.br><./br></strong>: Utilizada para quebra de linha em um texto. É mais comum a utilização da tag fechada <strong><./br></strong> pois ela é suportada tanto em HTML quanto XHTML.</li>
+        <li><strong><.strong><./strong></strong>: Utilizada para representar uma parte do texto que seja importante pois o texto fica em negrito no navegador web.</li>
+        <li><strong><.span><./span></strong>: Utilizada para agrupar elementos para fins de estilo, porém só deve ser usado quando não houver outra alternativa de elemento semântico.</li>
+        <li><strong><.audio><./audio></strong>: É utilizada para definir sons como música ou outros tipos de áudio. O HTML5 suporta mp3, onda e ogg.</li>
+        <li><strong><.video><./video></strong>: É usada para importação de arquivos de vídeo. O HTML suporta três formatos de vídeos compatíveis com essa tag (mp4, webM e ogg).</li>
+        <li><strong><.ol><./ol></strong>: Cria listas ordenadas. Deve ser acompanhado de start, para indicar o começo da lista e type, para apontar o tipo de caractere que será ordenado.</li>
+        <li><strong><.ul><./ul></strong>: Cria listas não ordenadas. Precisa do type para apontar o tipo de item que fará parte da lista.</li>
+        <li><strong><.li><./li></strong>: Define cada item da lista, que fazem parte de listas ordenadas ou não ordenadas.</li>
+        <li><strong><.style><./style></strong>: Define o estilo de parte ou de todo o conteúdo da página web com arquivo .css importado.</li>
+        <li><strong><.script><./script></strong>: Utilizada para a importação de um documento Javascript para interações do lado cliente com conteúdo dinâmico.</li>
+        <li><strong><.input type=”text”>, <.input type=”email”>, <.input type=”Submit”></strong>: São utilizadas para o recebimento de dados do usuário, possuindo diferença entre elas como o tipo do atributo que irá receber (type).</li>  
+    </ul>
+    
+    <h2 id="estrutura-html">Estrutura básica de um documento HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>A estrutura básica de um documento HTML consiste em 5 elementos: <strong><.!DOCTYPE></strong>, <strong><.html><./html></strong>, <strong><.head><./head></strong>, <strong><.title></strong>, <strong><.body><./body></strong>.</p>
+    <ul>
+        <li>O <strong><.!DOCTYPE></strong> informa ao navegador da web em qual versão do HTML a página está sendo escrita, por exemplo quando incluímos dentro do DOCTYPE a palavra HTML (<.!DOCTYPE html>), o navegador entenderá que aquela versão é do HTML5.</li>
+        <li>O elemento <strong><.html><./html></strong> está logo abaixo da declaração DOCTYPE, é o elemento básico e principal de um documento HTML e atua como um container onde podemos definir o idioma padrão utilizado pelo documento através do atributo “lang” que por padrão vem em inglês (<.html lang = “en”>). Todo documento HTML inicializa e finaliza com essa tag.</li>
+        <li>O <strong><.head><./head></strong>é o cabeçalho do documento cujo conteúdo não é exibido no navegador durante o carregamento da página. Esse elemento contém metadados, informações importantes, que especifica dados sobre o documento HTML.</li>
+        <li>O elemento <strong><.title></strong>é usado para definir o título do documento que é exibido na parte superior da janela do navegador, e fornece um título para a página quando ela é adicionada aos favoritos, favorecendo a busca nos resultados de pesquisa.</li>
+        <li>O <strong><.body><./body></strong> define o corpo do documento, e tudo que estiver dentro desta tag será mostrado no navegador web.</li>
+    </ul>
+
+    <h2 id="atributos-html">O que são atributos HTML?</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Atributos HTML são informações adicionais que podem ser incluídas nas tags HTML para modificar o comportamento ou a aparência dos elementos na página. Eles são escritos como pares de nome e valor, dentro das tags. Alguns pontos importantes a serem destacados sobre atributos são: a sintaxe geral de um atributo é: <strong>nome="valor"</strong>; o nome do atributo é sempre escrito em letras minúsculas, o valor pode ser uma string, número ou outra informação relevante.</p>
+        
+    <p><strong>Exemplos de Atributos:</strong></p>
+    <ul>
+        <li><strong>class</strong>: define uma classe CSS para estilização. Vários elementos podem compartilhar a mesma classe.</li>
+        <li><strong>href</strong>: define a URL de destino para links.</li>
+        <li><strong>target</strong>: identifica se o link deve ser aberto na mesma janela, em nova aba ou nova janela;</li>
+        <li><strong>id</strong>: identifica exclusivamente um elemento. Deve ser único na página.</li>
+    </ul>
+
+</body>
+</html>
